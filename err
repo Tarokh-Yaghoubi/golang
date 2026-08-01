@@ -1,0 +1,323 @@
+go: downloading github.com/segmentio/encoding v0.5.4
+cache/github.com/modelcontextprotocol/go-sdk@v1.6.0/internal/json/json.go:13:2: github.com/segmentio/encoding@v0.5.4: reading https://proxy.golang.org/github.com/segmentio/encoding/@v/v0.5.4.zip: 403 Forbidden
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_context.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_linux.c:7:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_stack_unix.c:11:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from _cgo_export.c:3:
+/usr/include/stdlib.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_clearenv.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_libinit.c:14:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_setenv.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_util.c:5:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/errno.h:25,
+                 from gcc_sigaction.c:7:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/errno.h:25,
+                 from cgo-gcc-prolog:32:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from gcc_traceback.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from gcc_fatalf.c:8:
+/usr/include/stdio.h:27:10: fatal error: bits/libc-header-start.h: No such file or directory
+   27 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/grp.h:25,
+                 from linux_syscall.c:11:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from _cgo_export.c:3:
+/usr/include/stdlib.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_setenv.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from gcc_traceback.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_clearenv.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_context.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from gcc_fatalf.c:8:
+/usr/include/stdio.h:27:10: fatal error: bits/libc-header-start.h: No such file or directory
+   27 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_libinit.c:14:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_linux.c:7:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/errno.h:25,
+                 from gcc_sigaction.c:7:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_stack_unix.c:11:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/errno.h:25,
+                 from cgo-gcc-prolog:32:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_util.c:5:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/grp.h:25,
+                 from linux_syscall.c:11:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_libinit.c:14:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_setenv.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from _cgo_export.c:3:
+/usr/include/stdlib.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from gcc_fatalf.c:8:
+/usr/include/stdio.h:27:10: fatal error: bits/libc-header-start.h: No such file or directory
+   27 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_clearenv.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/errno.h:25,
+                 from cgo-gcc-prolog:32:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from gcc_traceback.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_util.c:5:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:9,
+                 from libcgo.h:5,
+                 from gcc_context.c:7:
+/usr/include/stdint.h:26:10: fatal error: bits/libc-header-start.h: No such file or directory
+   26 | #include <bits/libc-header-start.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_linux.c:7:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/pthread.h:21,
+                 from gcc_stack_unix.c:11:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/errno.h:25,
+                 from gcc_sigaction.c:7:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+# runtime/cgo
+In file included from /usr/include/features.h:392,
+                 from /usr/include/grp.h:25,
+                 from linux_syscall.c:11:
+/usr/include/features-time64.h:20:10: fatal error: bits/wordsize.h: No such file or directory
+   20 | #include <bits/wordsize.h>
+      |          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+package github.com/gin-gonic/gin is not a main package
+package github.com/labstack/echo/v4 is not a main package
+go: downloading github.com/klauspost/compress v1.17.9
+cache/github.com/valyala/fasthttp@v1.51.0/compress.go:10:2: github.com/klauspost/compress@v1.17.9: reading https://proxy.golang.org/github.com/klauspost/compress/@v/v1.17.9.zip: 403 Forbidden
+cache/github.com/valyala/fasthttp@v1.51.0/compress.go:11:2: github.com/klauspost/compress@v1.17.9: reading https://proxy.golang.org/github.com/klauspost/compress/@v/v1.17.9.zip: 403 Forbidden
+cache/github.com/valyala/fasthttp@v1.51.0/compress.go:12:2: github.com/klauspost/compress@v1.17.9: reading https://proxy.golang.org/github.com/klauspost/compress/@v/v1.17.9.zip: 403 Forbidden
+package github.com/gofiber/fiber/v2 is not a main package
+package github.com/go-chi/chi/v5 is not a main package
+package gorm.io/gorm is not a main package
+package gorm.io/driver/sqlite is not a main package
+package gorm.io/driver/postgres is not a main package
+package github.com/jackc/pgx/v5 is not a main package
+package github.com/redis/go-redis/v9 is not a main package
+package github.com/golang-jwt/jwt/v5 is not a main package
+package github.com/spf13/viper is not a main package
+package github.com/spf13/cobra is not a main package
+go: github.com/stretchr/testify@latest (in github.com/stretchr/testify@v1.11.1):
+	The go.mod file for the module providing named packages contains one or
+	more exclude directives. It must not contain directives that would cause
+	it to be interpreted differently than if it were the main module.
+package github.com/google/uuid is not a main package
+go: golang.org/x/crypto@latest: module golang.org/x/crypto@latest found (v0.54.0), but does not contain package golang.org/x/crypto
+go: golang.org/x/sync@latest: module golang.org/x/sync@latest found (v0.22.0), but does not contain package golang.org/x/sync
+package github.com/joho/godotenv is not a main package
