@@ -16,11 +16,11 @@ func test_functions() {
 
 	var res, remainder, err = intDivision(10, 0)
 	switch {
-		case err != nil
-			fmt.Printf("%v\n", err.Error())
-		case remainder == 0
-			fmt.Printf("The result of the integer division is ==> %v", res)
-		dafault:
+		case err != nil:
+				fmt.Printf("%v\n", err.Error())
+		case remainder == 0:
+				fmt.Printf("The result of the integer division is ==> %v", res)
+		default:
 			fmt.Printf("The result of the int is => %v and the remainder is %v\n", res, remainder)	
 	}
 }
