@@ -68,6 +68,7 @@ func main() {
 	// you cannot keep it uninitialized
 	const myconst string  = "this is a const value"
 	fmt.Println(myconst)
-}
 
+	test_functions()
+}
 
