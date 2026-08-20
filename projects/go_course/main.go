@@ -70,5 +70,6 @@ func main() {
 
 	// test_functions()
 	// arrays()
-	testStrings()
+	// testStrings()
+	testStruct()
 }
