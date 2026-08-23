@@ -57,6 +57,19 @@ func arrays() {
 		fmt.Printf("Firstname lives in the map => [%v]", firstname)
 	}
 
+	delete(myMap, "sirname")
+	var lastname, sirname_ok = myMap["sirname"]
+	if sirname_ok {
+		fmt.Printf("\nsirname lives in the map =====> %v\n", lastname)
+	} else {
+		fmt.Println("\nsirname does not exist in the map ===> ")
+	}
+
+	// loop through the map: 
+
+	for name, value := range myMap {
+		fmt.Printf("Name: %v - Value: %v\n", name, value)
+	}
 }
 
  
