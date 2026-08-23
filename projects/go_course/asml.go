@@ -1,10 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func arrays() {
-	
-	var intArr [3]int32;
+
+	var intArr [3]int32
 
 	fmt.Println(intArr[0])
 	fmt.Println(intArr[1:3])
@@ -17,12 +20,12 @@ func arrays() {
 
 	// we can directly initialize an array using this syntax
 	var intArray [3]int32 = [3]int32{22, 23, 25}
-	// or using the collon-equal shorthand: 
+	// or using the collon-equal shorthand:
 	arr := [3]int32{25, 26, 27}
 	fmt.Printf("%v %v %v\n", intArray[0], intArray[1], intArray[2])
 	fmt.Printf("%v %v %v\n", arr[0], arr[1], arr[2])
 
-	// we can even ommit that first 3 
+	// we can even ommit that first 3
 	arr2 := [...]int32{25, 26, 27}
 	fmt.Println(arr2)
 	// slices
@@ -31,15 +34,15 @@ func arrays() {
 	intSlice = append(intSlice, 7)
 	fmt.Printf("intSlice after append len => %v with capacity %v\n", len(intSlice), cap(intSlice))
 
-	// another way to create a slice is to use the make() function. 
+	// another way to create a slice is to use the make() function.
 	// make() allows you to say how many members does your slice have,
 	// and also pass the specified cap of the slice.
-	var intSlice3 []int32 = make([]int32, 3, 8); 
+	var intSlice3 []int32 = make([]int32, 3, 8)
 	intSlice3 = append(intSlice3, 88)
 	intSlice3 = append(intSlice3, 87)
 	intSlice3 = append(intSlice3, 86)
 
-	fmt.Printf("intSlice3 val =========> %v\n", intSlice3)	// it appends everything after the zeros, [0, 0, 0, 88, 87, 86]
+	fmt.Printf("intSlice3 val =========> %v\n", intSlice3) // it appends everything after the zeros, [0, 0, 0, 88, 87, 86]
 
 	// MAP : key-value pairs
 	var myMap map[string]string = make(map[string]string)
@@ -57,19 +60,6 @@ func arrays() {
 		fmt.Printf("Firstname lives in the map => [%v]", firstname)
 	}
 
-	delete(myMap, "sirname")
-	var lastname, sirname_ok = myMap["sirname"]
-	if sirname_ok {
-		fmt.Printf("\nsirname lives in the map =====> %v\n", lastname)
-	} else {
-		fmt.Println("\nsirname does not exist in the map ===> ")
-	}
-
-	// loop through the map: 
-
-	for name, value := range myMap {
-		fmt.Printf("Name: %v - Value: %v\n", name, value)
-	}
 }
 
  
