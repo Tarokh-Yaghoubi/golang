@@ -38,6 +38,14 @@ func (e foo) fullName() string {
 	return e.name + " " + e.sirname
 }
 
+type person interface {
+	fullName() string
+}
+
+func makeName(e person) string {
+	return e.fullName()
+}
+
 // testStruct shows multiple ways to create and print struct values.
 // It demonstrates zero-value initialization, positional initialization,
 // and named-field initialization in Go.
@@ -61,4 +69,7 @@ func testStruct() {
 	var myFoo foo = foo{name: "Tarokh", sirname: "Jacobi", age: 30}
 	var fullname string = myFoo.fullName() // This will return "Tarokh Jacobi"
 	fmt.Printf("Full name: %s\n", fullname)
+
+	var fullname2 string = makeName(myFoo) // This will also return "Tarokh Jacobi" using the interface
+	fmt.Printf("Full name from interface: %s\n", fullname2)
 }
