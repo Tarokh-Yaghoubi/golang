@@ -71,5 +71,6 @@ func main() {
 	// test_functions()
 	// arrays()
 	// testStrings()
-	testStruct()
+	// testStruct()
+	testPointers()
 }
