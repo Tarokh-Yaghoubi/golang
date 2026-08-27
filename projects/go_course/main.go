@@ -72,5 +72,7 @@ func main() {
 	// arrays()
 	// testStrings()
 	// testStruct()
-	testPointers()
+	// testPointers()
+	// fetch()
+	hiCall()
 }
