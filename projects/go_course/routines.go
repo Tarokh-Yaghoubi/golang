@@ -37,3 +37,24 @@ func dbCall(i int) {
 	fmt.Println("The result from the database call is => ", dbData[i])
 	wg.Done() // this will decrement the counter of the WaitGroup by 1
 }
+
+func hiCall() {
+	runHiInMultipleGoroutines()
+}
+
+func runHiInMultipleGoroutines() {
+	var i int = 0
+	for i < 10 {
+		wg.Add(1)
+		go hi()
+		i++
+	}
+	wg.Wait()
+}
+
+func hi() {
+	var name string = "tarokh"
+	fmt.Println(name)
+	wg.Done()
+
+}
