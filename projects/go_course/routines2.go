@@ -37,7 +37,22 @@ func secondRun() {
 	fmt.Println("finish")
 }
 
+func thirdRun() {
+	myChannel := make(chan string)
+
+	go func() {
+		time.Sleep(3 * time.Second)
+		var result int = 23 + 43
+		myChannel <- fmt.Sprintf("the result is => %d", result)
+	}()
+
+	msg := <-myChannel
+	fmt.Println(msg)
+	fmt.Println("finish third run")
+}
+
 func main() {
 	// firstRun()
-	secondRun()
+	// secondRun()
+	thirdRun()
 }
