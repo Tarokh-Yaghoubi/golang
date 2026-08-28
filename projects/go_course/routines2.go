@@ -39,6 +39,13 @@ func secondRun() {
 
 func thirdRun() {
 	myChannel := make(chan string)
+	anotherChannel := make(chan string)
+
+	go func() {
+		time.Sleep(3 * time.Second)
+		var result int = 200 + 4343
+		anotherChannel <- fmt.Sprintf("the anotherChannel result is => %d", result)
+	}()
 
 	go func() {
 		time.Sleep(3 * time.Second)
@@ -46,8 +53,13 @@ func thirdRun() {
 		myChannel <- fmt.Sprintf("the result is => %d", result)
 	}()
 
-	msg := <-myChannel
-	fmt.Println(msg)
+	select {
+	case msgFromMyChannel := <-myChannel:
+		fmt.Println(msgFromMyChannel)
+	case msgFromAnotherChannel := <-anotherChannel:
+		fmt.Println(msgFromAnotherChannel)
+	}
+
 	fmt.Println("finish third run")
 }
 
