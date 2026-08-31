@@ -66,5 +66,47 @@ func thirdRun() {
 func main() {
 	// firstRun()
 	// secondRun()
-	thirdRun()
+	// thirdRun()
+	// fourthRun()
+	funfFunction() 
+}
+
+
+func getDataFromChannel(channel chan string) *string {
+	// this will get data from a channel, process the data and return its pointer
+	msg := <- channel
+	for i := 0; i < len(msg); i++ {
+		fmt.Printf("my channel data => %c\n", msg[i])
+	}
+
+	return &msg
+}
+
+func getDataNormally(data string) string {
+	var finalData string = fmt.Sprintf("my already packed data =======> %s", data)
+	return finalData
+}
+
+func funfFunction() {
+	var name string = "THis is another sentence"
+	var data string
+	go func() {
+		fmt.Printf("Another string inside a goroutine\n")	
+		data = getDataNormally(name)
+	}()
+	
+	fmt.Printf("funfFunction data ======> %s\n", data)
+}
+
+func fourthRun() {
+	myChannel := make(chan string)
+	var name string = "This is my name"
+	
+	go func() {
+		myChannel <- name
+	}()
+
+	var data * string = getDataFromChannel(myChannel)
+	fmt.Printf("returned data from channel ==========> %v", *data)
+
 }
