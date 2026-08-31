@@ -3,7 +3,10 @@ package main
 import (
 	"fmt"
 	"time"
+	"sync"
 )
+
+var wg = sync.WaitGroup{}
 
 func someFunction(num int) {
 	fmt.Println(num)
@@ -68,7 +71,9 @@ func main() {
 	// secondRun()
 	// thirdRun()
 	// fourthRun()
-	funfFunction() 
+	// funfFunction()
+	sixthRun()
+
 }
 
 
@@ -109,4 +114,24 @@ func fourthRun() {
 	var data * string = getDataFromChannel(myChannel)
 	fmt.Printf("returned data from channel ==========> %v", *data)
 
+}
+
+func printDummyNumbers() {
+	for i := 0; i< 10; i++ {
+		time.Sleep(1 * time.Second)
+		fmt.Printf("%dth line got printed\n", i)
+		fmt.Printf("wg list ======> %v", wg)
+	}
+	wg.Done()
+}
+
+func sixthRun() {
+	
+	for i := 0; i < 3; i++ {
+		wg.Add(1)
+		go printDummyNumbers()
+	}
+
+	wg.Wait()
+	
 }
