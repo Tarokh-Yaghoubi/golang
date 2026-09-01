@@ -69,13 +69,12 @@ func thirdRun() {
 func main() {
 	// firstRun()
 	// secondRun()
-	// thirdRun()
+	thirdRun()
 	// fourthRun()
 	// funfFunction()
-	sixthRun()
+	// sixthRun()
 
 }
-
 
 func getDataFromChannel(channel chan string) *string {
 	// this will get data from a channel, process the data and return its pointer
