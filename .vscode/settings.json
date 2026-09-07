@@ -1,0 +1,9 @@
+{
+  "editor.semanticHighlighting.enabled": true,
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true
+  }
+}
