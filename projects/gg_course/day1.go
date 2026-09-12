@@ -23,7 +23,11 @@ func (s *Server) addUser(user string) {
 
 func main() {
 	userchannel := make(chan string) 	// this is like a pipe
-
+	
+	var condition bool
+	condition = false
+	condition = true
+	
 	bufferedChannel := make(chan string, 2)	// this is like a pipe (this is a buffered channel and it will block when it is full)
 
 	go func() {
