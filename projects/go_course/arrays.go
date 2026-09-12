@@ -45,8 +45,23 @@ func test() {
 		sum(b)	// this is just FINE 
 		sum(d)	// this is COMPILER ERROR, d is not [5]int!, it does not match the parameter at all.
 	*/
+
+	fmt.Println(str)
+	fmt.Println(d)
+	fmt.Println(a)	// it is initialised with zeros
+	fmt.Println(b)
+	fmt.Println(c)	// specified values are set, others are zero
+
+	z := [...] string {"tarokh", "Jacob", "Phillip"}
+	fmt.Println(len(z), cap(z))		// 3, 3
+	var value * int = &d[4]	// returning the address of an index like this 
+	fmt.Printf("value is => %d\n", *value)	// printing out what lives inside that address
+
+	// two-dimensional array in golang:
+	twodim := [2][2]int{{1, 2},{2, 1}}	// in two-dimensional arrays we are forced to specify the len
+	fmt.Println(twodim)
 }
 
 func main() {
-	
+	test()
 }
