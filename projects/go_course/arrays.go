@@ -60,6 +60,9 @@ func test() {
 	// two-dimensional array in golang:
 	twodim := [2][2]int{{1, 2},{2, 1}}	// in two-dimensional arrays we are forced to specify the len
 	fmt.Println(twodim)
+	twodim[0][0] = 43
+	twodim[0][1] = 34
+	fmt.Println(twodim)
 }
 
 func main() {
