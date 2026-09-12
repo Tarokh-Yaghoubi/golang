@@ -5,6 +5,8 @@ package main
 import "fmt"
 
 func test() {
+	 // OPERATOR PRECEDENCE
+	 // PEMDAS => (parantheses, exponents, multiplication, division, addition, subtraction)
 	a := 10
 	b := 32
 	c := 43.54
@@ -29,12 +31,10 @@ func test() {
 	fmt.Printf("new sum is => %d\n", newSum)
 }
 
-func main() {
+func bitwise() {
 	var flags uint8
 	 // var fields uint8 = 0b00000100	 // another way to set the fields 
 
-	 // OPERATOR PRECEDENCE
-	 // PEMDAS => (parantheses, exponents, multiplication, division, addition, subtraction)
 
 	fmt.Printf("%08b\n", flags)
 
@@ -50,8 +50,16 @@ func main() {
 	flags = flags | (1 << 4)
 	fmt.Printf("more flags are on now => [%08b]\n", flags)
 	
-	flags = flags & (0 << 2)
+	flags = flags & ~(1 << 2)	// this will flip the bit, if will do the shift, then it will NOT the value, then it will do the AND
 	fmt.Printf("flip the flag => [%08b]\n", flags)
 
+	// cryptography algorithms, system programming, network programming, device drviers, etc.
+
+	
+}
+
+func main() {
+
+	bitwise()
 	test()
 }
