@@ -2,7 +2,10 @@
 
 package main 
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func test() {
 	 // OPERATOR PRECEDENCE
@@ -35,6 +38,7 @@ func bitwise() {
 	var flags uint8
 	 // var fields uint8 = 0b00000100	 // another way to set the fields 
 
+	var a int = 10
 
 	fmt.Printf("%08b\n", flags)
 
@@ -50,12 +54,20 @@ func bitwise() {
 	flags = flags | (1 << 4)
 	fmt.Printf("more flags are on now => [%08b]\n", flags)
 	
-	flags = flags & ~(1 << 2)	// this will flip the bit, if will do the shift, then it will NOT the value, then it will do the AND
+	flags = flags &^ (1 << 2)	// this will flip the bit, if will do the shift, then it will NOT the value, then it will do the AND
 	fmt.Printf("flip the flag => [%08b]\n", flags)
 
 	// cryptography algorithms, system programming, network programming, device drviers, etc.
 
-	
+	// there are a bunch of functions for writing values in output in binary format, 
+	// we can use strconv lib
+
+	fmt.Println(strconv.FormatUint(uint64(flags), 2))
+
+	c := ^a
+	fmt.Println(c)
+	fmt.Println(strconv.FormatUint(uint64(c), 2))
+	fmt.Println(strconv.FormatUint(uint64(a), 2))
 }
 
 func main() {
