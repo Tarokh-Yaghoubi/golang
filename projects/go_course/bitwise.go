@@ -4,6 +4,31 @@ package main
 
 import "fmt"
 
+func test() {
+	a := 10
+	b := 32
+	c := 43.54
+	sum := a + b
+	fmt.Println("Sum => ", sum)
+
+	firstname := "Tarokh"
+	lastname := "yaghoubi"
+	fmt.Printf("%s %s\n", firstname, lastname)
+
+	difference := a - b
+	fmt.Println("difference is => ", difference)
+
+
+	complex1 := complex(10, 15)
+	complex2 := complex(3, 4)
+	complexSum := complex1 + complex2
+	fmt.Println("full complex sum val => ", complexSum)
+	fmt.Println("complex sum is => ", imag(complexSum))
+	fmt.Println("complex sum real => ", real(complexSum))
+	newSum := a + int(c)
+	fmt.Printf("new sum is => %d\n", newSum)
+}
+
 func main() {
 	var flags uint8
 	 // var fields uint8 = 0b00000100	 // another way to set the fields 
@@ -27,4 +52,6 @@ func main() {
 	
 	flags = flags & (0 << 2)
 	fmt.Printf("flip the flag => [%08b]\n", flags)
+
+	test()
 }
