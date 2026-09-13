@@ -28,9 +28,13 @@ func test() {
 	fmt.Println(len(f), cap(f))
 
 	// append is used to append elements to a slice
+	
+	// these are appended to the end of the slice 
+	// because the slice 'e' is filled with zero-len in the beginning
 	e = append(e, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 	fmt.Println("new e is => ", e)
 
+	
 	// SIMILARTIES WITH ARRAYS
 
 	// like arrays u can fetch or manipulate values stored at given index
@@ -48,6 +52,19 @@ func test() {
 	fmt.Println("h empty slice > ", len(h), cap(h))
 	h = append(h, 100, 200, 300, 400, 500, 600, 700, 800, 900)
 	fmt.Println("h after populating it with data => ", h, len(h), cap(h))
+
+	h = append(h, e...)
+	fmt.Println("h after appending e => ", h)
+
+	
+	// there is no problem with passing a slice of (len x or len y) to a function, the size is not assigned to the type like a normal array. 
+	someFunction(h)		// this is ok
+	someFunction([]int{1000, 2000, 3000, 4000, 5000})	// this is also ok 
+
+}
+
+
+func someFunction(slc [] int) {
 
 }
 
