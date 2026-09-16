@@ -63,6 +63,15 @@ func test() {
 	twodim[0][0] = 43
 	twodim[0][1] = 34
 	fmt.Println(twodim)
+
+
+	// you can use == or != to compare two arrays
+	// arrays are equal if they are the same length and contain equal values
+	var firstarr = [...]int{1, 2, 3}
+	var secondarr = [3]int{1, 2, 3}
+	fmt.Println("Arrays equality - len => ", firstarr == secondarr, len(firstarr), len(secondarr))
+	// len of both arrays is 3
+	
 }
 
 func main() {
