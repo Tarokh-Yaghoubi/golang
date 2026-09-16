@@ -21,6 +21,29 @@ func test() {
 	fmt.Println(string(s[3:]))
 	fmt.Println(string(s[:]))
 	// s[1] = 'a'	// this is a bug
+
+	name := "tarokh"	// sequence of bytes
+	// firstLetter := name[0]
+	// fmt.Println(firstLetter)
+	// lastLetter := name[len(name) - 1]
+	// fmt.Println(lastLetter)
+
+	// you can modify the string, but u cannot modify the bytes inside it directly
+	firstLetter := string(name[0])
+	fmt.Println(firstLetter)
+
+	var b rune = 'x'
+	fmt.Println(string(b))
+
+	// convert a string to a byte/rune
+	runeName := []rune(name)
+	fmt.Println(runeName)
+
+
+	solKey := "𝄞𝄞𝄞"
+	unicodeString := []rune(solKey)	// first we will convert the string into a rune-array
+	firstCharacter := unicodeString[0]	// we will fetch the first rune from the unicodeString
+	fmt.Println(string(firstCharacter))	// we will print it out, so it will not be garbage
 }
 
 func main() {
