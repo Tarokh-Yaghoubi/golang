@@ -25,8 +25,20 @@ func main() {
 	switch ln := len(str) > 10; ln {
 	// here i set one rule for both conditions, true and false:
 	case true, false:
-		fmt.Printf("It doesnt matter what the len is => %v, %v", len(str), ln)
+		fmt.Printf("It doesnt matter what the len is => %v, %v\n", len(str), ln)
 	default:
 		fmt.Println("Surprisingly none of above!")
+	}
+
+	var rn string = "x"
+	switch rn {
+	case "x":
+		fallthrough
+	case "a", "b":
+		fmt.Println("a or b")
+	case "v", "h":
+		fmt.Println("v or h")
+	default:
+		fmt.Println("None of above")
 	}
 }
