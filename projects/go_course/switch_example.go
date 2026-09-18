@@ -19,4 +19,14 @@ func main() {
 	default:
 		fmt.Println("Surprisingly none of above!")
 	}
+
+	// we can also match multiple cases
+	var str string = txt // this is now true, but with a shorter text it'll be false
+	switch ln := len(str) > 10; ln {
+	// here i set one rule for both conditions, true and false:
+	case true, false:
+		fmt.Printf("It doesnt matter what the len is => %v, %v", len(str), ln)
+	default:
+		fmt.Println("Surprisingly none of above!")
+	}
 }
