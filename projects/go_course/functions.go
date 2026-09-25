@@ -16,6 +16,14 @@ func main() {
 	fullname3, _ := getFullNameWithLen("John", "Smith")
 	fmt.Printf("Full name is => %v and the length is ignored\n", fullname3)
 	// this works completely fine
+
+	sm := sums(10, 20, 30, 40, 50)
+	fmt.Println("final sum is =============> ", sm)
+
+	// another way to pass a slice to a variadic function is to use the ... operator after the slice name
+	numbers := []int{100, 200, 300, 400, 500}
+	sm2 := sums(numbers...)
+	fmt.Println("final sum is =============> ", sm2)
 }
 
 func test_functions() {
@@ -69,3 +77,25 @@ func getFullNameWithLen(firstname, lastname string) (string, int) {
 	var len int = len(fullname)
 	return fullname, len
 }
+
+// variadic parameters
+/*
+	func funcName(param1 ...paramType) (return type) {
+
+	}
+*/
+
+func sums(nums ...int) int {
+	total := 0
+
+	for index, num := range nums {
+		total += num
+		fmt.Printf("index => %v \t num => %v \t total => %v\n", index, num, total)
+	}
+
+	return total
+
+}
+
+// We can also pass structs to function in golang, like we do in C programming language, thats a way of calculating things, and passing multiple
+// variables in just one parameter
