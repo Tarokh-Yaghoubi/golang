@@ -3,17 +3,25 @@
 // It supports Compositions instead
 // this file explains embedding in Compositions
 
+// Compositions are used for reusing the code in golang
+
 package main
 
 import "fmt"
 
+type GPS struct {
+	model string
+}
+
 type Engine struct {
+	model      string
 	horsePower int
 }
 
 type Car struct {
 	model string
 	Engine
+	GPS
 }
 
 func (e *Engine) Start() {
@@ -21,7 +29,9 @@ func (e *Engine) Start() {
 }
 
 func (c *Car) Drive() {
-	fmt.Printf("Driving a %s with horsePower %d\n", c.model, c.horsePower)
+	fmt.Printf("Driving a %s with horsePower %d\n", c.Engine.model, c.horsePower)
+	fmt.Printf("Driving a => %s\n", c.GPS.model)
+	fmt.Printf("Driving a => %s\n", c.model)
 }
 
 func main() {
@@ -31,7 +41,8 @@ func main() {
 
 	var firstCar Car = Car{
 		model:  "mercedes",
-		Engine: Engine{horsePower: 515},
+		Engine: Engine{model: "e300", horsePower: 515},
+		GPS:    GPS{model: "G-wagon"},
 	}
 
 	var v12Engine Engine = Engine{
@@ -40,6 +51,5 @@ func main() {
 
 	firstCar.Start()
 	firstCar.Drive()
-
 	v12Engine.Start()
 }
