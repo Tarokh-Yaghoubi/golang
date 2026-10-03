@@ -1,3 +1,7 @@
+// This file demonstrates Go interfaces: defining behavior with methods,
+// implementing and embedding interfaces, and using them to work with different
+// shape types through shared functions.
+
 // interfaces are types, that define the functionality
 // of a type, they define what type should do
 // But NOT HOW IT SHOULD DO IT
