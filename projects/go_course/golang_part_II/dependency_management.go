@@ -1,4 +1,6 @@
 
+package main
+
 // GO_MODULES
 // go modules are used for managing dependencies in your go projects
 // modules are packages that group similar code together
