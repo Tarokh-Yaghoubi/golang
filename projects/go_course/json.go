@@ -24,13 +24,6 @@ type User struct {
 	Permissions []string `json:"roles"` // rename "Permissions" to "roles"
 }
 
-type Person struct {
-	Name       string   `json:"full_name"`
-	Age        int      `json:"years_old,omitempty"`
-	Occupation string   `json:"-"`
-	Langauage  []string `json:"spoken_languages"`
-}
-
 func main() {
 	user := User{
 		ID:          1,
