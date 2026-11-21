@@ -1,25 +1,28 @@
-
 // HTTP stands for Hypertext transfer protocol
 // It is a layer 7 protocol of the OSI network model
 
-
 package main
 
-import "context"
-import "fmt"
-import ""
+import (
+	"context"
+	"encoding/json"
+	"fmt"
+	"net/http"
+	"time"
+)
 
 type boringResponse struct {
-	 Activity		string	`json:"activity"`
-	 Type 			string 	`json:"type"`
-	 Participants	int 	`json:"participants"`
-	 Price			float64	`json:"price"`
-	 Link			string	`json:"link"`
-	 Key			string	`json:"key"`
-	 Accessibility	float64	`json:"accessibility"`
+	Activity      string  `json:"activity"`
+	Type          string  `json:"type"`
+	Participants  int     `json:"participants"`
+	Price         float64 `json:"price"`
+	Link          string  `json:"link"`
+	Key           string  `json:"key"`
+	Accessibility float64 `json:"accessibility"`
 }
 
 func main() {
+
 	ctx := context.Background()
 	client := &http.Client{
 		Timeout: 10 * time.Second,
@@ -38,6 +41,11 @@ func main() {
 	}
 
 	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		fmt.Println("error invalid status code: ", resp.Status)
+		return
+	}
 
 	var boringRes boringResponse
 	if err := json.NewDecoder(resp.Body).Decode(&boringRes); err != nil {
