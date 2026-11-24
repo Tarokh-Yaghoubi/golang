@@ -23,17 +23,20 @@ type boringResponse struct {
 
 func main() {
 
+	// create a context
 	ctx := context.Background()
 	client := &http.Client{
 		Timeout: 10 * time.Second,
 	}
 
+	// create the request, (it will not be sent here)
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, "http://www.boredapi.com/api/activity/", nil)
 	if err != nil {
 		fmt.Println("error creating the request => ", err)
 		return
 	}
 
+	//
 	resp, err := client.Do(req)
 	if err != nil {
 		fmt.Println("error doing request => ", err)
